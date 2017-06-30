@@ -1,0 +1,45 @@
+<html>
+<head>
+               <title>Snake and ladder</title>
+               <script type="text/javascript" src="index.js"></script>
+               <link rel="stylesheet" type="text/css" href="style.css">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<body>
+               <button id="start" onclick="snakesAndLadders.startGame()">Start Game</button>
+               <table id="scorecard">
+                              <th><h3>Player 1</h3></th>
+                              <th><h3>Player 2</h3></th>
+                              <tr>
+                                             <td>
+                                             <button class="roll" id="roll1" onclick="snakesAndLadders.takeTurn(this.id)" disabled="true">Roll</button>
+                                             </td>
+                                             <td>
+                                             <button class="roll" id="roll2" onclick="snakesAndLadders.takeTurn(this.id)" disabled="true">Roll</button>
+                                             </td>
+                              </tr>
+                              <tr>
+                                             <td>
+                                                            Current position:<div id="pos1">0</div><br>Previous pos:<div id="oldpos1"></div>
+                                             </td>
+                                             <td>
+                                                            Current position:<div id="pos2">0</div><br>Previous pos:<div id="oldpos2"></div>
+                                             </td>
+                              </tr>
+                              <tr>
+                                             <td> You rolled <div id="position1"></td>
+                                             <td> You rolled <div id="position2"></td>
+                                             
+                              </tr>
+                              <tr>
+                                             <td><div id="status1"></div></td>
+                                             <td><div id="status2"></div></td>
+                              </tr>
+                              <tr>
+                                             <td colspan="2">
+                                                            <h2>Winner is <div id = "winner"></div></h2>
+                                             </td>
+                              </tr>
+               </table>
+
+</html>
